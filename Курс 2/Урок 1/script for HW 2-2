@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HW Season 2-2</title>
+</head>
+<body>
+<script>
+let ask = confirm('Практика к домашней работе урока 2.\nОтслеживать исполнение кода, вы можете начать с нажатия F12 в вашем браузере (корректно работает в Хроме).' + '\nПосле чего нажмите F8 (Pause script execution. \nНажатие F10 выполняет следуюий шаг.' + '\n\nУсловия ввода для значений "a, b" - целые числа.' + '\nУсловие ввода для "x" - число с плавающей запятой.' +'\n p.s. Не пытайтесь сломать скрипт, я не ставил цель предотвратить поломку, проcто выполняйте условия и смотрите как они будут поэтапно исполнятся! Все понятно?');
+if (ask == true) {
+//Расставь флажки под каждой строкой ниже
+function func (a, b, x) { 	//Это пример из урока
+	if (a > 9 && b == 5) { 	
+		x = x * (a + b);	
+	}
+
+	if (a > 2 || x > 6) {	
+		x++;
+	}
+	return x;
+//Этого достаточно
+}
+let first = parseInt(+prompt('Inter value for "a":'));
+let second = parseInt(+prompt('Inter value for "b":'));
+let third = 'string'//+prompt('Inter value for "x":');
+alert(func(first, second, third));
+}
+</script>
+</body>
+</html>
